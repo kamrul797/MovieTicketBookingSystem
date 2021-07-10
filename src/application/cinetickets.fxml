@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00203FFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LandingPageController">
+   <children>
+      <StackPane prefHeight="58.0" prefWidth="600.0" style="-fx-background-color: #00203FFF;" />
+      <Label layoutX="21.0" prefHeight="58.0" prefWidth="370.0" text="CineTickets" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="183.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="342.0" fitWidth="600.0" layoutY="58.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/rob-laughter-491252-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="262.0" layoutY="282.0" mnemonicParsing="false" onAction="#changeScreenButtonPushedLogIn" style="-fx-background-color: #cf4740;" text="Get Started" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="161.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to CineTickets!">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#2da8d8" layoutX="195.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Movie Tickets Online">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="240.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamrul Hasan | 192140">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="505.0" layoutY="18.0" mnemonicParsing="false" onAction="#changeScreenButtonPushedAdminLogin" style="-fx-background-color: #ffffff;" text="Admin Panel" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

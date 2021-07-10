@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00203FFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BookingController">
+   <children>
+      <StackPane layoutY="1.0" prefHeight="58.0" prefWidth="600.0" style="-fx-background-color: #00203FFF;" />
+      <Label layoutX="21.0" layoutY="1.0" prefHeight="58.0" prefWidth="370.0" text="CineTickets" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="342.0" fitWidth="601.0" layoutY="59.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/rob-laughter-491252-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="542.0" layoutY="18.0" mnemonicParsing="false" onAction="#changeScreenButtonPushedBacktoAdmin" style="-fx-background-color: #ffffff;" text="Home" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="566.0" style="-fx-background-color: #f7ff82;">
+        <columns>
+          <TableColumn fx:id="col_bid" prefWidth="70.0" text="Booking Id" />
+          <TableColumn fx:id="col_cname" prefWidth="111.0" text="Customer Name" />
+            <TableColumn fx:id="col_cnumber" text="Number" />
+           <TableColumn fx:id="col_movie" prefWidth="119.0" text="Movie" />
+          <TableColumn fx:id="col_date" minWidth="3.0" prefWidth="74.0" text="Date" />
+            <TableColumn fx:id="col_time" prefWidth="65.0" text="Time" />
+            <TableColumn fx:id="col_seat" prefWidth="46.0" text="Seat(s)" />
+        </columns>
+      </TableView>
+      <TextField fx:id="text_bid" disable="true" editable="false" layoutX="20.0" layoutY="320.0" prefHeight="25.0" prefWidth="137.0" promptText="Booking Id" />
+      <TextField fx:id="text_cname" layoutX="167.0" layoutY="320.0" prefHeight="25.0" prefWidth="137.0" promptText="Customer Name" />
+      <TextField fx:id="text_cnumber" layoutX="314.0" layoutY="320.0" prefHeight="25.0" prefWidth="137.0" promptText="Number" />
+      <TextField fx:id="text_movie" layoutX="20.0" layoutY="356.0" prefHeight="25.0" prefWidth="137.0" promptText="Movie" />
+      <TextField fx:id="text_date" layoutX="167.0" layoutY="356.0" prefHeight="25.0" prefWidth="137.0" promptText="Date" />
+      
+      <Button layoutX="461.0" layoutY="337.0" mnemonicParsing="false" onAction="#insertBooking" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #2DA8D8FF;" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="529.0" layoutY="337.0" mnemonicParsing="false" onAction="#deleteBooking" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #FE8463;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="msg" layoutX="342.0" layoutY="283.0" textFill="#0f35cd" />
+      <Label layoutX="20.0" layoutY="61.0" prefHeight="34.0" prefWidth="230.0" text="Add / Remove Bookings" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_time" layoutX="315.0" layoutY="356.0" prefHeight="25.0" prefWidth="77.0" promptText="Time" />
+      <TextField fx:id="text_seat" layoutX="401.0" layoutY="356.0" prefHeight="25.0" prefWidth="51.0" promptText="Seat(s)" />
+   </children>
+</AnchorPane>
